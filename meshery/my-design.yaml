@@ -1,0 +1,13 @@
+apiVersion: meshery.layer5.io/v1alpha1
+kind: Design
+metadata:
+  name: nginx-demo
+  version: v1.0.0
+spec:
+  services:
+    - name: nginx
+      type: Service
+      settings:
+        image: nginx:latest
+        ports:
+          - port: 80
